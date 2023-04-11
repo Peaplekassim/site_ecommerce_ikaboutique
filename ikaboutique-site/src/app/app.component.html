@@ -1,0 +1,81 @@
+<header>
+    <div class="image_logo">
+       <a routerLink="/"><img class="logo" src="../assets/logo/logoikaboutiki.png" alt="logo_de_mon_site">
+        <span>BOUTIKI</span></a> 
+    </div>
+    <nav class="nav-link">
+        <div class="lien">
+            <a routerLinkActive="active" routerLink="/accueil">Accueil</a>
+            <a routerLinkActive="active" routerLink="/categoris">Gatégorie</a>
+            <a routerLinkActive="active" routerLink="/contact">A propos</a>
+            <a routerLinkActive="active" routerLink="/about">Contact</a>
+        </div>
+        <div class="listitem">
+            <ul>
+                <li><a routerLink="connection"><i class='bx bxs-user'></i></a></li>    
+                <li><i class='bx bx-cart' ></i></li>
+                <li><i class='bx bx-menu' id="menu-icon"></i></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <router-outlet></router-outlet>
+</main>
+
+
+
+<footer>
+    <h2>Envie d’idéés de style et de friandises?</h2>
+    <div class="footer">
+        <div class="foo">
+            <input type="text" placeholder="Votre Email*">
+            <button type="button">S'inscrire</button>
+        </div>
+        
+        <div class="col">
+            <div class="first-col">
+                <h2>IKABOUTIKI.</h2>
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxl-whatsapp'></i>
+            </div>
+            <div class="info-us">
+                <div class="second_col">
+                    <h3>SUPPORT</h3>
+                    <br>
+                    <p>Contact Us <br> FAQs
+                       <br> Guide des tailles
+                       <br> expédition & Retour
+                    </p>
+                </div>
+                <div class="third_col">
+                    <h3>BOUTIQUE
+                    </h3>
+                    <br>
+                    <p>Achats pour homme
+                        <br>Achat pour femme
+                        <br> Achat pour enfant
+                        <br> Réduction
+                    </p>
+                </div>
+                <div class="fourth_col">
+                    <h3>ENTREPRISE </h3>
+                    <br>
+                    <p>Notre histoire
+                        <br>Carrières
+                        <br> Termes & Conditions
+                        <br> Confidentialité & Cookie
+                    </p>
+                </div>
+                <div class="five_col">
+                    <h3>CONTACT</h3><br>
+                    <p>1-202-555-0105
+                        <br>1-202-555-0105
+                        <br> help@shopper.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

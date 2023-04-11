@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="articles-container">
+        <div class="article">
+            <div class="img-container">
+                <a class="card-img-hover" href="#"><img src="product/women/product-5.jpg" alt=""></a>
+                <div class="card-actions">
+                    <span class="card-action">
+                      <button class="btn btn-xs btn-circle btn-white-primary" data-bs-toggle="modal" data-bs-target="#modalProduct">
+                        <i class="fa fa-eye"></i>
+                      </button>
+                    </span>
+                    <span class="card-action">
+                      <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
+                        <i class="fa fa-shopping-cart"></i>
+                      </button>
+                    </span>
+                    <span class="card-action">
+                      <button class="btn btn-xs btn-circle btn-white-primary" data-toggle="button">
+                        <i class="fa fa-heart"></i>
+                      </button>
+                    </span>
+                  </div>   
+            </div>
+            <div class="article-bottom">
+                <a href="#" class="type-title">Dresses</a>
+                <a href="#" class="article-title">Floral print midi Dress</a>
+                <a href="#" class="price">12 500F cfa</a>
+            </div>
+            
+        </div>
+    </div>
+        </div>
+    </main>
+    
+
+
+    <script>
+        var add_container = document.querySelector(".articles-container");
+            for (let add = 1; add < 20; add++) {
+               let adds = document.querySelector(".article").cloneNode(true);
+                adds.querySelector("img").src = `https://yevgenysim-turkey.github.io/shopper/assets/img/products/product-${add}.jpg`;
+               add_container.appendChild(adds);
+            }
+    </script>
+</body>
+</html>

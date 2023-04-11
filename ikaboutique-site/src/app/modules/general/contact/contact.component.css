@@ -1,0 +1,67 @@
+.about-section {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: 5%;
+  }
+  .about-description {
+    position: relative;
+    text-align: center;
+    margin: 5%;
+    opacity: 50%;
+  }
+  .bout-text-container {
+    display: flex;
+  }
+  .about-content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+  }
+  .about-image {
+    width: 100%;
+    margin-right: 50px;
+  }
+  .about-text-container {
+    flex: 1;
+    padding-bottom: 20px;
+  }
+  .about-text {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  .about-description {
+    font-size: large;
+    text-align: center;
+  }
+  .about-icon-list {
+    margin: 40px;
+  }
+  .about-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #666;
+  }
+  .about-icon-list {
+    font-size: 200%;
+    text-align: center;
+    position: relative;
+  }
+  .about-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .about-button-container {
+    text-align: center;
+  }

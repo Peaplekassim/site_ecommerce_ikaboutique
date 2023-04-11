@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="col-12 col-md">
+      <div class="nav-link-style">
+        <ul>
+          <li><i class="fa-solid fa-hand-point-right"></i><a routerLink="/categoris">Voir femmes</a></li>
+          <li><i class="fa-solid fa-hand-point-right"></i><a routerLink="/liste-homme">Voir hommes</a></li>
+          <li><i class="fa-solid fa-hand-point-right"></i><a routerLink="/liste-enfant">Voir enfants</a></li>
+        </ul>
+      </div>
+  
+      <!-- Heading -->
+      <h3 class="mb-1">Enfant</h3>
+  
+      <!-- Breadcrumb -->
+      <ol class="breadcrumb mb-md-0 fs-xs text-gray-400">
+        <li class="breadcrumb-item">
+          <a class="text-gray-400" href="index.html">Catégories</a>
+        </li>
+        <li class="breadcrumb-item active">
+          articles pour enfants
+        </li>
+      </ol>
+      
+    </div>
+    <div class="articles-container">
+        <div class="article"  *ngFor="let article of articlesEnfants; let ii = index">
+          <div class="img-container">
+                  <a class="card-img-hover" href="#"><img src="../../../../assets/enfants//product-{{ii}}.jpg" alt=""></a>
+            <div class="card-actions">
+                      <span class="card-action">
+                        <button class="btn btn-xs btn-circle btn-white-primary">
+                          <i class="fa fa-shopping-cart"></i>
+                        </button>
+                      </span>
+                      <span class="card-action">
+                        <button class="btn btn-xs btn-circle btn-white-primary">
+                          <i class="fa fa-heart"></i>
+                        </button>
+                      </span>
+                    </div>   
+              </div>
+        <div class="article-bottom">
+            <a href="#" class="type-title">{{article.type}}</a>
+            <a href="#" class="article-title">{{article.name}}</a>
+            <a href="#" class="price">{{article.price}} {{article.devise}}</a>
+        </div>
+                
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+      <div class="panier">
+        <div class="img-container">
+          <img src="../assets/imgs/hommes/product-0.jpg" alt="">
+        </div>
+        <div class="description">
+            <div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tempora eum fugit minus consectetur obcaecati delectus reprehenderit voluptas, labore animi accusantium laborum incidunt illo aliquid adipisci, nam doloribus nihil? Deserunt!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, facere quos, esse recusandae repellendus facilis porro harum ullam rerum atque debitis in veniam deleniti praesentium. Ducimus, temporibus laborum! Ratione, possimus.
+              </p>
+          </div>
+          <div class="btn-container">
+            <a href="#" class="btn btn-danger btn-lg">Supprimer</a>
+            <a class="btn btn-success btn-lg" href="#">Achèter</a>
+          </div>
+        </div>
+      </div>
+  </div>

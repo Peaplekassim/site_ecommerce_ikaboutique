@@ -1,0 +1,373 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+
+
+*{
+    margin: 0;
+}
+
+/* Pour le titre contactez-nous : centre et marge de bas*/
+.titrecnt h1 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* Pour rendre les deux blocks flex et 
+aligné horizontalement: Appele-nous, formulaire*/
+.content1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+/* Pour les paragraphes contenu dans un div*/
+div p {
+    font-size: 14px;
+    color:rgba(0, 0, 0, 0.68) ;
+    padding-bottom: 20px;
+}
+/*Pour une marge de bas au titre h3 */
+.iCall h2 {
+    padding-bottom: 20px;
+}
+div h2 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+/*Pour les bordures en bas des blocks */
+.border {
+   border: 0.9px solid rgba(0, 0, 0, 0.40);
+   width: 90%;
+}
+.block p {
+    font-size: 15px;
+   
+} 
+.block span i {
+    padding-left: 5px;
+}
+.block span{
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    
+}
+/*----- Le block de droite -----*/
+.spaceform{
+    margin-bottom: 20px;
+}
+.spaceform input {
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+}
+.spaceform textarea{
+    border-radius: 5px;
+}
+.spaceform .button{
+    width: 40%;
+    background-color:rgba(0, 0, 0, 0.9) ;
+    color: white;
+    height: 50px;
+    border-radius: 5px;
+}
+.content1
+ .right{
+    padding-bottom: 310px;
+}
+.ikbtk{
+    margin-left: 2%;
+}
+/*----- Fin du block de droite -----*/
+/* Pour le footer*/
+.pied {
+    background-color:rgba(0, 0, 0, 0.88) ;
+    color: white;
+    width: 100%;
+    height: 520px;
+} 
+.pied div .secondttr{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.fform{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.fform form table tr td input{
+    padding: 20px;
+    border-radius: 7px;
+    
+}
+/* Pour les champs "input du tableau"*/
+.fform form table tr td input[type="mail"]{
+    background-color:rgba(217, 217, 217, 0.09);
+    width: 90%;
+}
+
+.fform form table tr td input[type="submit"]{
+    background-color:rgba(217, 217, 217, 0.635);
+    color: white;
+    font-weight: 700;
+    width: 100%;
+
+}
+.fform form table{
+    border-collapse: separate;
+    border-spacing: 30px 10px;
+}
+/* Les information du footer */
+
+.footcont{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap:10%;
+   padding-top: 50px; 
+}
+/* Pour la partie icon*/
+.icon i{
+    font-size: 30px;
+    
+    padding-right: 15px;
+}
+#ic i{
+padding-right: 20px;
+}
+.partie-container{
+    display: flex;
+}
+.partie p {
+    color: rgba(255, 255, 255, 0.59);
+}
+.partie h4 {
+    padding-bottom: 10px;
+}
+.partie{
+    margin-right: 30px;
+}
+.border2{
+    margin-top: 40px;
+    border: 0.9px solid rgba(255, 255, 255, 0.12);
+   width: 100%;
+}
+.copy p {
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.content1{
+    padding-bottom: 250px;
+}
+/*Les medias queree */
+@media(max-width:792px){
+    /* Pour rendre les deux blocks flex et 
+aligné verticalement: Appele-nous, formulaire*/
+.content1{
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    
+ 
+    padding: 50px;
+}
+
+
+/* Pour le background du footer*/2
+.pied {
+    background-color: rgba(0, 0, 0, 0.88) ;
+    color: white;
+    width: 100%;
+    height: 520px;
+} 
+/*Pour le font-size de la page en entier*/
+html{
+    font-size: 55%;
+}
+.footcont .ikbtk{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+/*Pour alignez lz block au centre  */ 
+.footcont{
+    width: 50%;
+    margin: 0 auto;
+}
+/*Pour un décalage 2 à 2 des block du footer */
+/*.ikbtk{
+    display: block;
+}*/
+.partie-container{
+    display: grid ;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+
+/*Pour l'espace en bas du block d gauche */
+.left{
+    padding-bottom: 80px;
+}
+
+.fform{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Pour les champs "input du tableau"*/
+.fform form table tr td input[type="mail"]{
+    background-color:rgba(217, 217, 217, 0.09);
+    width: 80%;
+}
+
+.fform form table tr td input[type="submit"]{
+    background-color:rgba(217, 217, 217, 0.635);
+    color: white;
+    font-weight: 700;
+    width: 100%;
+
+}
+.fform form table{
+    border-collapse: separate;
+    border-spacing: 10px 10px;
+}
+
+.pied {
+    background-color:rgba(0, 0, 0, 0.88) ;
+    color: white;
+    width: 100%;
+    height: 735px;
+} 
+
+
+/*#box{
+    display:block;
+}
+/*Pour le footer */
+
+}
+@media(max-width:620px){
+
+
+    /*.footcont .ikbtk{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    
+    /*Pour alignez lz block au centre  */ 
+    .footcont{
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    /*Pour un décalage 2 à 2 des block du footer */
+    /*.ikbtk{
+        display: block;
+    }*/
+    .partie-container{
+        display: grid ;
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+
+
+    /* Pour les tailles des blocks du footer*/
+    .partie-container .partie h4{
+        font-size: 12px;
+     }
+     .partie-container {
+         padding-left: 3%;
+         padding-right: 3%;
+     }
+     .partie-container .partie p{
+         font-size:10px ;
+     }
+     /* Pour la taille de IKABOUTIKI et l'icon en desous*/
+     .ikbtk h2{
+        font-size: 17px;
+     }
+     .ikbtk .icon i {
+        font-size: 15px;
+     }
+
+     /* Pour le second titre*/
+     .secondttr{
+        font-size: 20px;
+     }
+
+
+     /*Pour le formulaire */
+     .fform{
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    /* Pour les champs "input du tableau"*/
+    .fform form table tr td input[type="mail"]{
+        background-color:rgba(217, 217, 217, 0.09);
+        width: 80%;
+        font-size: 10px;
+    }
+    
+    .fform form table tr td input[type="submit"]{
+        background-color:rgba(217, 217, 217, 0.635);
+        color: white;
+        font-weight: 700;
+        width: 100%;
+        font-size: 10px;
+    
+    }
+    .fform form table{
+        border-collapse:collapse;
+        border-spacing:  5px 5px;
+    }
+
+
+    /* Pour le premeier formulaire*/
+    .spaceform input {
+        width: 100%;
+        height: 40px;
+        border-radius: 3px;
+       
+    }
+    .spaceform textarea{
+        border-radius: 5px;
+        width: 100%;
+    }
+    .spaceform .button{
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.9) ;
+        color: white;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .pied {
+        background-color:rgba(0, 0, 0, 0.88) ;
+        color: white;
+        width: 100%;
+        height: 800px;
+    } 
+    
+}
+
+/*.columun{
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+ margin-right: 40px;
+}
+.columun div .partie{
+    display: flex;
+}*/

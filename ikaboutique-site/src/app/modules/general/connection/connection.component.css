@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+
+}
+/* Pour le contenu principal*/
+
+.contenu{
+    width: 90%;
+    background-color:  #f7f7f7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: 5%;
+    padding-bottom: 3;
+}
+.mainContent{
+    padding-top: 60px;
+    width: 60%;
+    margin:  0 auto;
+
+    
+
+}
+/* La partie logo*/
+
+header .logo{
+    left: 0;
+    padding: 30px 30px;
+} 
+
+
+header .logo span{
+    margin-bottom: 15px;
+    font-weight: 700;
+    
+}
+/*#top{
+    margin-bottom: 20px;
+}*/
+
+/*Pour une marge en dessous du titre principal */
+.wordAcc h1{
+    padding-bottom: 20px ;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(37, 37, 41);
+    opacity: 67%;
+
+    text-shadow: 3px 3px 0 rgb(223, 223, 241);
+}
+
+.form form .spaceform{
+    padding: 20px;
+}
+/* Pour le champs input */
+
+.form form .spaceform input{
+    padding: 15px;
+    width: 90%;
+    border-radius: 7px;
+}
+.form form .spaceform input[type="submit"]{
+    background-color:rgba(0, 0, 0, 0.88) ;
+    color: white;
+    width: 40%;
+    font-size: 20px
+}
+
+/*Pour le paragraphe contenu dans le mainContent */
+.mainContent p {
+    font-size: 18px;
+}

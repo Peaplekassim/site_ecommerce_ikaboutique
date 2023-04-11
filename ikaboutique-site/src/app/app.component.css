@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+:root{
+    --bg-color: rgba(171, 167, 167, 0.827);
+    --text-color: black;
+}
+html{
+    /*font-size: 65.5%;*/
+    overflow-x: hidden;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.active{
+    background-color: #ddd;
+    height: 100%;
+    display: inline-block;
+    padding: 19PX;
+}
+span{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header{
+    position: sticky;
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+    background: white/*var(--bg-color)*/;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.183);
+
+    z-index: 100;
+    box-shadow: 0 0 3rem var(--text-color);
+}
+#menu-icon{
+    display: none;
+}
+
+.maincontainer{
+    padding-top: 50px;
+    display: flex;
+}
+.image_logo{
+    display:flex;
+    align-items: center;
+    
+    margin: 10px;
+}
+.image_logo img{
+    width: 40px;
+}
+.nav-link {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: baseline;
+   
+}
+.nav-link ul{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    font-size: 24px;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 2rem;
+    
+}
+
+
+.nav-link a {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-left: 2rem;
+    transition: 3.s;
+}
+
+
+
+/** Le footer de la page app-cpmponent **/
+
+
+
+
+
+/*********************** footer  ***************************/
+.col{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 3rem;
+    align-items: baseline;
+    padding-bottom: 2rem;
+    color: rgb(164, 160, 160);
+}
+.info-us{
+    display: flex;
+    flex-flow: row;
+    gap: 3rem;
+}
+.col h2, .col h3, footer h2{
+    color: white;
+}
+
+span{
+    font-weight: bold;
+    font-size: 16px;
+}
+.foo button{
+    padding: 15px;
+    background: rgb(85, 84, 84);
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.foo{
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+footer h2{
+    text-align: center;
+    padding-top: 2rem;
+}
+.foo input{
+    color: white;
+}
+.foo input.active{
+    border: 1px solid white;
+}
+.foo input::placeholder{
+    color: white;
+    margin-left: 10px;
+}
+footer{
+    background: rgb(43, 42, 42);
+    color: var(--bg-color);   
+}
+.footer{
+    padding: 10px;
+}
+.first-col i {
+    font-size: 30px;
+    margin-top: 2rem;
+}
+.foo input{
+    font-size: 18px;
+    width: 30%;
+    height: 50px;
+    background: rgb(19, 18, 18);
+}
+.foo input::placeholder{
+    margin-left: 20px;
+}
+
+@media (max-width: 360px) {
+    .foo input{
+        height: 20px;
+        font-size: 55%;
+    }
+    .first-col i {
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Pour les tailles des blocks du footer*/
+    
+@media (max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+    .col{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-us{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lien {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    .lien.active{
+        display: block;
+    }
+    .lien a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }   
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 617px) {
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .portfolio-layer h4 {
+        font-size: 14px;
+        color: var(--bg-color);
+    }
+    
+ footer{
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    justify-content: space-around;
+ }
+ 
+}
+@media (max-width: 360px) {
+    .portfolio-container{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .portfolio-layer h4 {
+        font-size: 14px;
+        color: var(--bg-color);
+    }
+}

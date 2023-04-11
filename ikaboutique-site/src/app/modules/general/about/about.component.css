@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+}
+.mainContaint{
+    background-color: #f7f7f7;
+    width: 90%;
+    padding: 5%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.content1{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: ;
+}
+
+/* Pour le titre contactez-nous : centre et marge de bas*/
+.titrecnt h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    opacity: 65%;
+}
+
+/* Pour rendre les deux blocks flex et 
+aligné horizontalement: Appele-nous, formulaire*/
+.content1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+/* Pour les paragraphes contenu dans un div*/
+div p {
+    font-size: 14px;
+    color:rgba(0, 0, 0, 0.68) ;
+    opacity: 60%;
+    padding-bottom: 20px;
+}
+/*Pour une marge de bas au titre h3 */
+.iCall h2 {
+    padding-bottom: 20px;
+    opacity: 60%;
+}
+h2 i {
+    margin-right: 10px;
+    
+    font-size: 20px;
+    opacity: 70%;
+}
+div h2 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    opacity: 60%;
+}
+/*Pour les bordures en bas des blocks */
+.border {
+   border: 0.9px solid rgba(0, 0, 0, 0.40);
+   width: 90%;
+}
+.block p {
+    font-size: 15px;
+   
+} 
+.block span i {
+    padding-left: 5px;
+}
+.block span{
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    
+}
+/*----- Le block de droite -----*/
+form{
+    
+}
+.spaceform{
+    margin-bottom: 20px;
+    
+    
+}
+.spaceform input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+}
+.spaceform textarea{
+    border-radius: 5px;
+}
+.spaceform .button{
+    
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 60%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /*
+    width: 40%;
+    background-color:rgba(0, 0, 0, 0.9) ;
+    color: white;
+    height: 50px;
+    border-radius: 5px;
+    */
+}
+
+.ikbtk{
+    margin-left: 2%;
+}

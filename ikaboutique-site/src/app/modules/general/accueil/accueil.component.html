@@ -1,0 +1,133 @@
+<section>
+    <!---->
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="../../../../assets/image-acceuil/normalise/cover-1.jpg" alt="imge-specimen-1">
+            <div class="portfolio-layer">
+                <h4>Femme</h4>
+                
+                <a routerLink="/categoris">Boutique Femme <i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="../../../../assets/image-acceuil/normalise/boubou_bogolan.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Homme</h4>
+                
+                <a routerLink="/liste-homme">Boutique Homme <i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+        
+        </div>
+
+        <div class="portfolio-box">
+            <img src="../../../../assets/image-acceuil/normalise/enfant.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Enfant</h4>
+                <a routerLink="/liste-enfant">Boutique Enfant <i class='bx bx-right-arrow-alt' ></i></a>
+            </div>
+        </div>
+    </div>
+    <!---->
+
+    <div class="merci">
+        
+        <div class="card"> 
+            <h4><i class='bx bxs-car'></i> Livraison Gratuit</h4>
+            <p>à partir 60000F</p>
+        </div>
+
+        <div class="card"> 
+            <h4><i class='bx bxs-lock-alt' ></i> Boutique Sécurisé</h4>
+            <p>   avec nous , vous êtes assur.</p>
+        </div>
+
+        <div class="card"> 
+            <h4><i class='bx bxs-purchase-tag-alt' ></i> Plus de 10,000 article</h4>
+            <p>nous avons tout pour répondre vos bésoin.</p>
+        </div>
+
+    </div>
+    
+
+</section>
+<h2 style="text-align: center;">Nos dernier articles..</h2>
+<section class="new-container">
+        <div class="new-box">
+            <img src="product-5.jpg" alt="">
+            <div class="new-layer">
+                <h4>Femme</h4>
+                
+                <a href="#">SALE</a>
+            </div>
+        </div>
+
+        <div class="new-box">
+            <img src="product-6.jpg" alt="">
+            <div class="new-layer">
+                <h4>Homme</h4>
+                <a href="#">SALE</a>
+            </div>
+        </div>
+
+        <div class="new-box">
+            <img src="product-7.jpg" alt="">
+            <div class="new-layer">
+                <h4>Enfant</h4>
+                <a href="#">SALE</a>
+            </div>
+        </div>
+
+        <div class="new-box">
+            <img src="product-8.jpg" alt="">
+            <div class="new-layer">
+                <h4>Femme</h4>
+                
+                <a href="#">SALE</a>
+            </div>
+        </div>
+
+        <div class="new-box">
+            <img src="product-9.jpg" alt="">
+            <div class="new-layer">
+                <h4>Homme</h4> 
+                <a href="#">SALE</a>
+            </div>   
+        </div>
+
+        <div class="new-box">
+            <img src="product-10.jpg" alt="">
+            <div class="new-layer">
+                <h4>Enfant</h4>
+                <a href="#">SALE</a>
+            </div>
+        </div>
+</section>
+<div class="container">
+    
+    <div class="articles-container">
+        <div class="article"  *ngFor="let article of articles; let ii = index">
+          <div class="img-container">
+                  <a class="card-img-hover" href="#"><img src="../../../../assets/article//product-{{ii}}.jpg" alt=""></a>
+            <div class="card-actions">
+                      <span class="card-action">
+                        <button class="btn btn-xs btn-circle btn-white-primary">
+                          <i class="fa fa-shopping-cart"></i>
+                        </button>
+                      </span>
+                      <span class="card-action">
+                        <button class="btn btn-xs btn-circle btn-white-primary">
+                          <i class="fa fa-heart"></i>
+                        </button>
+                      </span>
+                    </div>   
+              </div>
+        <div class="article-bottom">
+            <a href="#" class="type-title">{{article.type}}</a>
+            <a href="#" class="article-title">{{article.name}}</a>
+            <a href="#" class="price">{{article.price}} {{article.devise}}</a>
+        </div>
+                
+      </div>
+    </div>
+  </div>
